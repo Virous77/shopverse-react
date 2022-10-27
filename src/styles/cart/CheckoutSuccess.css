@@ -1,0 +1,19 @@
+.paymentDone {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.backOrder {
+  margin-top: 2rem;
+  color: white;
+  background-color: blue;
+  font-size: 1rem;
+  padding: 10px 1rem;
+}
+
+.paymentDone h1 {
+  font-size: 2rem;
+}

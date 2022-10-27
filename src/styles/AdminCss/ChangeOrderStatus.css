@@ -1,0 +1,44 @@
+.changeOrderStatusBar {
+  text-align: center;
+  padding: 2rem;
+}
+
+.changeOrderStatusBar form {
+  width: 400px;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.changeOrderStatusBar form select {
+  padding: 10px;
+  outline: none;
+  border: 1px solid gray;
+  background-color: white;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.changeOrderStatusBar form button {
+  padding: 8px;
+  background-color: rgb(75, 75, 248);
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .changeOrderStatusBar {
+    width: 100%;
+  }
+
+  .changeOrderStatusBar form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,128 @@
+.addProductBar {
+  padding: 2rem;
+}
+
+.productTitle h1 {
+  font-size: 1.5rem;
+}
+
+.productForm {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 50%;
+  flex-direction: column;
+}
+
+.productName,
+.productPrice,
+.productBrand,
+.productDescription,
+.category,
+.productImage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.productForm label {
+  font-weight: 600;
+}
+
+.productName input,
+.productPrice input,
+.productBrand input {
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.liveImage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+  width: fit-content;
+}
+
+.liveImage img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.imageDelete {
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.category select {
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.productDescription textarea {
+  padding: 12px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.submitButton {
+  text-align: end;
+}
+
+.submitButton button {
+  background: rgb(80, 80, 248);
+  font-size: 1rem;
+  padding: 12px 2rem;
+  width: fit-content;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.submitButton button:hover {
+  background-color: rgb(29, 29, 255);
+}
+
+.submitButton button:active {
+  scale: 0.96;
+}
+
+@media (max-width: 992px) {
+  .productForm {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .productForm {
+    width: 100%;
+  }
+
+  .addProductBar {
+    padding: 1rem;
+  }
+
+  .productTitle h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .submitButton {
+    width: 100%;
+  }
+
+  .submitButton button {
+    width: 100%;
+  }
+}

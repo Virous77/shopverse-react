@@ -1,0 +1,11 @@
+.admin {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .admin {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,113 @@
+.productActionBar {
+  display: grid;
+  grid-template-columns: 250px 1fr 170px;
+  align-items: center;
+  padding: 20px 2rem;
+  background-color: #222831;
+  color: white;
+}
+
+.productGridList {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filterIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.gridIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.listIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.productGridList span {
+  opacity: 0.8;
+}
+
+.listIcon:active,
+.gridIcon:active,
+.filterIcon:active {
+  scale: 0.96;
+}
+
+.productSort select {
+  padding: 5px 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  border: 2px solid white;
+  color: black;
+}
+
+option {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+.productSort select:focus {
+  border: 2px solid #00adb5;
+}
+
+.fitActive {
+  color: orangered;
+}
+
+.active {
+  color: #00adb5;
+}
+
+.notActive {
+  color: white;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  font-size: 1.4rem;
+  color: rgb(211, 23, 23);
+}
+
+@media (max-width: 820px) {
+  .productActionBar {
+    grid-template-columns: 300px 1fr 1fr;
+  }
+
+  .productSort {
+    justify-self: end;
+    align-items: flex-end;
+  }
+
+  .productActionBar {
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .productActionBar {
+    padding: 20px 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding-bottom: 4.5rem;
+  }
+
+  .productGridList span {
+    display: none;
+  }
+
+  .productSort select {
+    padding: 5px;
+  }
+}

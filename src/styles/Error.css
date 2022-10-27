@@ -1,0 +1,26 @@
+.errorBar {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.errorBar h1 {
+  font-size: 2rem;
+  color: red;
+}
+
+.errorBar p {
+  font-size: 0.9rem;
+}
+
+.errorBar h2 {
+  color: white;
+  background-color: black;
+  padding: 10px 1rem;
+  margin-top: 2rem;
+  font-weight: 100;
+  font-size: 0.8rem;
+}

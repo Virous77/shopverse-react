@@ -1,0 +1,131 @@
+.checkWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.backCart {
+  background-color: silver;
+  padding: 8px 2rem;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  border-radius: 2px;
+  max-width: 1200px;
+  width: fit-content;
+  margin: 2rem 7rem;
+}
+
+.checkoutBar {
+  padding: 1rem 2rem;
+}
+
+.checkoutBars {
+  padding: 0 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.checkoutHead {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.checkoutHeads {
+  margin-bottom: 1rem;
+}
+
+.checkoutHead,
+.checkoutHeads p {
+  font-weight: 600;
+}
+
+.checkoutForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipientName {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.recipientName label {
+  font-weight: 600;
+  display: none;
+}
+
+.recipientName input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.selectCountry {
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.checkButton {
+  text-align: end;
+}
+
+.checkButton button {
+  background-color: silver;
+  padding: 8px 2rem;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.checkButton button:hover {
+  opacity: 0.9;
+}
+
+.checkButton button:active {
+  scale: 0.96;
+}
+
+@media (max-width: 960px) {
+  .checkWrap {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: unset;
+  }
+}
+
+@media (max-width: 620px) {
+  .checkoutBar {
+    padding: 1rem;
+  }
+
+  .checkoutBars {
+    padding: 1rem;
+  }
+
+  .backCart {
+    width: fit-content;
+    margin: 2rem;
+  }
+
+  .checkoutForm form {
+    width: 100%;
+  }
+
+  .selectCountry {
+    width: 100%;
+  }
+}

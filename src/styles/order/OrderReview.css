@@ -1,0 +1,189 @@
+.reviewBar {
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  top: 15%;
+  left: 10%;
+  z-index: 100;
+  box-shadow: 4px 2px 68px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.cancelReview {
+  text-align: end;
+  padding: 1rem;
+}
+
+.cancelIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cancelIcon:active {
+  scale: 0.96;
+}
+
+.orderDetails {
+  padding: 1rem;
+}
+
+.orderDetails h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.backOrders {
+  width: fit-content;
+  padding: 2rem 0;
+}
+.backOrders button {
+  padding: 10px;
+  border: none;
+  background-color: silver;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.backOrders button:hover {
+  opacity: 0.9;
+}
+
+.orderId {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.orderId p {
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: 110px 160px;
+  gap: 0.5rem;
+}
+
+.orderId p span {
+  font-weight: 600;
+}
+
+.orderAddress {
+  margin-top: 1rem;
+}
+
+.orderAddress p {
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: 110px 150px;
+  gap: 0.5rem;
+}
+
+.orderAddress p span {
+  font-weight: 600;
+}
+
+.reviewTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.reviewTable thead {
+  background-color: aliceblue;
+}
+
+.reviewTable thead,
+.reviewTable tbody {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.reviewTable thead tr,
+.reviewTable tbody tr {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.reviewTable tbody td img {
+  width: 5rem;
+}
+
+.reviewTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.reviewTitle p {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.leaveReview {
+  background-color: rgb(64, 64, 251);
+  font-size: 0.9rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.leaveReview:hover {
+  background-color: blue;
+}
+
+.leaveReview:active {
+  scale: 0.96;
+}
+
+@media (max-width: 922px) {
+  .reviewTable {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewBar {
+    width: 95%;
+    margin: auto;
+    left: 3%;
+  }
+}
+
+@media (max-width: 632px) {
+  .review768 {
+    display: none;
+  }
+
+  .reviewTable thead tr,
+  .reviewTable tbody tr {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reviewTable thead,
+  .reviewTable tbody {
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+}

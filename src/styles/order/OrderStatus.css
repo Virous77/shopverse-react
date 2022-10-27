@@ -1,0 +1,86 @@
+.orderStatusBar {
+  background-color: white;
+}
+
+.orderStatusWrap {
+  height: 100vh;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.orderStatusHead {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.orderStatusHead h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.ordersList {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 1rem;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  gap: 1rem;
+}
+
+.ordersList thead {
+  background-color: #222831;
+  color: whitesmoke;
+}
+
+.ordersList thead tr th {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.ordersList tbody tr td {
+  padding: 15px 2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.orderPlaced {
+  color: #2c2;
+}
+
+.orderDeliverd {
+  color: red;
+}
+
+@media (max-width: 820px) {
+  .ordersList {
+    width: 100%;
+  }
+
+  .orderStatusWrap {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ordersList tbody tr td {
+    padding: 15px 0.4rem;
+  }
+
+  .ordersList thead tr th {
+    padding: 1rem 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .orderStatusWrap {
+    padding: 1rem 0.4rem;
+  }
+
+  .ordersList {
+    padding: 0;
+  }
+}

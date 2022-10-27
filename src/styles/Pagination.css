@@ -1,0 +1,24 @@
+.pagination {
+  text-align: center;
+  background-color: #222831;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 10px 2rem;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.pagination li {
+  color: white;
+}
+
+.pagination p {
+  color: white;
+  font-weight: 600;
+}

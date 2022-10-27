@@ -1,0 +1,67 @@
+.summaryBar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid black;
+  height: fit-content;
+}
+
+.checkSummaryHead {
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: 0;
+}
+
+.summaryInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #222831;
+  color: white;
+  padding: 1rem;
+}
+
+.summaryInfo p {
+  font-weight: 600;
+}
+
+.summaryItem,
+.summarytotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summarytotal {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.summaryProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+  overflow: scroll;
+  height: 300px;
+}
+
+.summaryProduct::-webkit-scrollbar {
+  width: 0;
+  opacity: 0;
+}
+
+.summaryListItem b {
+  text-transform: capitalize;
+}
+
+.summaryListItem {
+  background-color: white;
+  padding: 1rem;
+}
+
+@media (max-width: 620px) {
+  .summaryProduct {
+    height: 200px;
+  }
+}

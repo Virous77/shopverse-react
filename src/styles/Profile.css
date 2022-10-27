@@ -1,0 +1,80 @@
+.profile {
+  height: 75vh;
+  padding: 2rem 5rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.userInfo h1 {
+  padding: 0 10px;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emailId {
+  margin-bottom: 0.5rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.userEmail {
+  padding-bottom: 0.5rem;
+}
+
+.passwordChange {
+  margin-top: 2rem;
+}
+
+.passwordChange button {
+  color: red;
+  background-color: white;
+  padding: 10px 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.logout button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 1rem;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout button:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .userInfo {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .logout {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .profile {
+    padding: 2rem;
+  }
+}

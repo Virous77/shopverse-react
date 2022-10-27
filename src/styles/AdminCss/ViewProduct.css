@@ -1,0 +1,156 @@
+.productListHead {
+  display: grid;
+  grid-template-columns: 80px 200px 1fr 155px 120px 150px;
+  gap: 1rem;
+  background-color: #222831;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.searchView {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.pagi {
+  padding-top: 1rem;
+}
+
+.searchView h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.searchBoxView {
+  margin-top: 1rem;
+}
+
+.LiveProduct {
+  margin-top: 2rem;
+}
+
+.LiveProduct h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.actions {
+  justify-self: center;
+}
+
+.showList {
+  display: grid;
+  grid-template-columns: 80px 200px 1fr 150px 120px 150px;
+  gap: 1rem;
+  padding: 10px;
+  align-items: center;
+}
+
+.showList img {
+  width: 100px;
+  height: 100px;
+}
+
+.showList p {
+  text-transform: capitalize;
+}
+
+.centerView {
+  justify-self: center;
+}
+
+.productActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edit,
+.delete {
+  color: white;
+  font-size: 0.8rem;
+  border: none;
+  padding: 5px 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.edit {
+  background-color: #2c2;
+}
+
+.delete {
+  background-color: rgba(250, 6, 6, 0.684);
+}
+
+.edit:hover,
+.delete:hover {
+  opacity: 0.8;
+}
+
+.edit:active,
+.delete:active {
+  scale: 0.96;
+}
+
+@media (max-width: 992px) {
+  .showList {
+    grid-template-columns: 70px 110px 1fr 150px 80px 150px;
+  }
+
+  .productListHead {
+    grid-template-columns: 70px 110px 1fr 150px 80px 150px;
+  }
+}
+
+@media (max-width: 820px) {
+  .searchView {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  .searchBoxView {
+    margin-top: -1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .centerView {
+    display: none;
+  }
+
+  .showList {
+    grid-template-columns: 70px 110px 1fr 150px;
+  }
+
+  .productListHead {
+    grid-template-columns: 70px 110px 1fr 150px;
+  }
+}
+
+@media (max-width: 620px) {
+  .showList {
+    grid-template-columns: 60px 80px 1fr 90px;
+  }
+
+  .productListHead {
+    grid-template-columns: 60px 80px 1fr 90px;
+  }
+
+  .productActions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .showList p {
+    font-size: 0.8rem;
+  }
+
+  .showList img {
+    width: 70%;
+    height: 70%;
+  }
+}

@@ -1,0 +1,59 @@
+.productReviewBar {
+  max-width: 1200px;
+  margin: auto;
+  height: 300px;
+  overflow: scroll;
+}
+
+.productReviewBar::-webkit-scrollbar {
+  width: 0;
+  opacity: 0;
+}
+
+.fixed {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fixed h1 {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.productReviewsList {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.productReviewsMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.msg {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.date {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.userNameReview {
+  font-size: 0.8rem;
+}
+
+.emptyReview {
+  text-align: center;
+  color: red;
+  margin: 4rem 0;
+}

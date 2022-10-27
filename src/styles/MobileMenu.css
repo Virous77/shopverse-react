@@ -1,0 +1,50 @@
+.mobileHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoMobile {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoMobile h1 {
+  color: white;
+}
+
+.pageLinksMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartLoginMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loginCartMobile {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.loginLinkMobile a,
+.cartLinkMobile a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: white;
+  color: black;
+  padding: 5px 1rem;
+}
+
+.xlgIcon {
+  color: white;
+  font-size: 1.8rem;
+}

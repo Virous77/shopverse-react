@@ -1,0 +1,29 @@
+.chartBar {
+  max-width: 700px;
+  height: 500px;
+}
+
+.chartBar h1 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 7px 0;
+}
+
+@media (max-width: 768px) {
+  .chartBar {
+    width: 500px;
+  }
+}
+
+@media (max-width: 520px) {
+  .chartBar {
+    width: 380px;
+  }
+}
+
+@media (max-width: 405px) {
+  .chartBar {
+    width: 340px;
+  }
+}
