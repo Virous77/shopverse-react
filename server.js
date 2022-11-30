@@ -56,8 +56,6 @@ app.post("/create-payment-intent", async (req, res) => {
       name: shipping.name,
       phone: shipping.phone,
     },
-
-    // receipt_email: userEmail,
   });
 
   res.send({

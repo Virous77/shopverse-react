@@ -35,7 +35,7 @@ const CheckoutPayment = () => {
   const description = `shopverse: email: ${userEmail}, Ammounts: ${totalAmmount}`;
 
   useEffect(() => {
-    fetch("https://shopverse-react.herokuapp.com/create-payment-intent", {
+    fetch("https://shopverse.onrender.com/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
