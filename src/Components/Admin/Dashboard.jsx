@@ -6,7 +6,6 @@ import { BsFillCartPlusFill } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import useFirestoreData from "../../customHooks/useFirestoreData";
 import { TOTAL_EARNING, selectTotalEarning } from "../../Redux/orderSlice";
-import Chart from "./infobox/Chart";
 
 const Dashboard = () => {
   const totalEarning = useSelector(selectTotalEarning);
@@ -43,7 +42,6 @@ const Dashboard = () => {
           icon={<BsFillCartPlusFill />}
         />
       </div>
-      <Chart />
     </section>
   );
 };
