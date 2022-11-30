@@ -6,6 +6,7 @@
     "@reduxjs/toolkit": "^1.8.5",
     "@stripe/react-stripe-js": "^1.13.0",
     "@stripe/stripe-js": "^1.42.0",
+    "chart.js": "^4.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -25,7 +26,9 @@
     "stripe": "^10.15.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start:frontend": "react-scripts start",
+    "start:backend": "nodemon server.js",
+    "start": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
